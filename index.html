@@ -53,7 +53,17 @@
       justify-content: center;
       text-align: center;
       overflow: hidden;
-      background: linear-gradient(135deg, #3d5a2e 0%, #5a7d4a 40%, #6b8f5e 100%);
+      background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=1200') center/cover no-repeat;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.3) 0%, transparent 40%);
+      pointer-events: none;
     }
 
     .hero::before {
@@ -600,20 +610,7 @@
 
 <!-- ===== Hero ===== -->
 <header class="hero">
-  <div class="hero-pattern"></div>
-  <div class="farm-placeholder">
-    <svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="140" y="280" width="120" height="180" rx="4" fill="#fff"/>
-      <polygon points="200,140 120,240 280,240" fill="#fff"/>
-      <rect x="190" y="380" width="20" height="80" fill="#fff"/>
-      <circle cx="120" cy="320" r="40" fill="#fff" opacity="0.5"/>
-      <circle cx="280" cy="300" r="30" fill="#fff" opacity="0.4"/>
-      <circle cx="160" cy="180" r="50" fill="#fff" opacity="0.3"/>
-      <circle cx="250" cy="170" r="35" fill="#fff" opacity="0.25"/>
-    </svg>
-  </div>
-
-  <div class="hero-content">
+    <div class="hero-content">
     <span class="hero-badge">Honiton · Devon</span>
     <h1>Glebe Farm <span class="ampersand">&amp;</span> Produce</h1>
     <p class="hero-subtitle">Seasonal veg boxes, straight from the field to your doorstep.</p>
