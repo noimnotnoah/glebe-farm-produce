@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glebe Farm Produce — Honiton Veg Boxes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #faf5eb;
+      color: #2e2e2e;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      padding: 1rem;
+    }
+
+    .board {
+      max-width: 640px;
+      margin: 2rem auto;
+      background: #faf5eb;
+      border: 3px solid #6b8f5e;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 0 0 6px #faf5eb, 0 0 0 9px #6b8f5e;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: normal;
+      color: #6b8f5e;
+      letter-spacing: -0.5px;
+      text-align: center;
+      border-bottom: 2px solid #dcd0bc;
+      padding-bottom: 0.3rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-style: italic;
+      color: #6b8f5e;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      letter-spacing: 0.3px;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .section:last-of-type {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: bold;
+      color: #6b8f5e;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px dashed #dcd0bc;
+      padding-bottom: 0.2rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "— ";
+      color: #6b8f5e;
+    }
+
+    li {
+      margin-bottom: 0.2rem;
+    }
+
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 0.3rem 0;
+      border-bottom: 1px dotted #e0d6c2;
+    }
+
+    .price-row:last-of-type {
+      border-bottom: none;
+    }
+
+    .price-label {
+      font-weight: bold;
+    }
+
+    .price-amount {
+      color: #6b8f5e;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .notice {
+      background: #f0e8d8;
+      padding: 1rem 1.2rem;
+      margin-top: 1.2rem;
+      font-size: 0.98rem;
+      border-left: 4px solid #6b8f5e;
+    }
+
+    .contact {
+      text-align: center;
+      margin-top: 1.5rem;
+      padding-top: 1.2rem;
+      border-top: 2px solid #6b8f5e;
+      font-size: 1.1rem;
+    }
+
+    .contact strong {
+      color: #6b8f5e;
+    }
+
+    .footnote {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #8a7e6a;
+      margin-top: 1.5rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #dcd0bc;
+      margin: 1.8rem 0;
+    }
+
+    @media (max-width: 480px) {
+      .board {
+        border-width: 2px;
+        box-shadow: 0 0 0 4px #faf5eb, 0 0 0 6px #6b8f5e;
+        padding: 1.5rem 1.2rem;
+      }
+      h1 { font-size: 1.7rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="board">
+    <h1>Glebe Farm Produce.</h1>
+    <p class="subtitle">Seasonal veg boxes. Honiton.</p>
+
+    <div class="section">
+      <h2>What we grow</h2>
+      <p style="margin-bottom:0.5rem;">Everything comes off our smallholding here in Honiton. What's in your box depends entirely on what's ready that week. We don't buy anything in.</p>
+      <ul>
+        <li>Potatoes — Pentland Javelin, Charlotte, Cara</li>
+        <li>Carrots — Early Nantes</li>
+        <li>Brassicas — cavolo nero, kale, savoy cabbage, sprouting broccoli</li>
+        <li>Salad — mixed leaves, rocket, spring onions</li>
+        <li>Onions — red and brown, shallots</li>
+        <li>Beetroot — Boltardy</li>
+        <li>Leeks, swede, parsnips (autumn into winter)</li>
+        <li>French beans, courgettes, squash (summer)</li>
+        <li>Apples —自家的 Bramley and Katy (Sept–Nov)</li>
+        <li>Eggs — from our free-range hens</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>This week's likely box</h2>
+      <p style="font-style:italic; color:#6b8f5e; margin-bottom:0.4rem;">Mid-September</p>
+      <ul>
+        <li>Charlotte potatoes — a good, waxy spud for salads or boiling</li>
+        <li>Cavolo nero — the big dark leaves are at their best now</li>
+        <li>Early Nantes carrots — sweet, straight from the ground</li>
+        <li>Boltardy beetroot — bunched, tops still on unless you ask otherwise</li>
+        <li>Bramley apples — first of the season, tart, good for cooking</li>
+        <li>Half-dozen free-range eggs</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Prices</h2>
+      <div class="price-row">
+        <span class="price-label">Small box</span>
+        <span class="price-amount">£8</span>
+      </div>
+      <div class="price-row">
+        <span class="price-label">Large box</span>
+        <span class="price-amount">£12</span>
+      </div>
+      <div class="price-row">
+        <span class="price-label">Eggs (dozen)</span>
+        <span class="price-amount">£2.50</span>
+      </div>
+      <p style="font-size:0.9rem; color:#5c5c5c; margin-top:0.5rem;">Small box feeds 1–2 people. Large box feeds 3–4. Both filled with whatever's best that week — you don't choose the contents, the season does.</p>
+    </div>
+
+    <div class="section">
+      <h2>How it works</h2>
+      <p><strong>Order by Thursday</strong> for Friday collection or delivery.</p>
+      <ul style="margin-top:0.3rem;">
+        <li>Collect from the farm gate — Glebe Farm, Honiton (the lane opposite the phone box)</li>
+        <li>Delivery within Honiton village on Friday afternoons</li>
+      </ul>
+      <p style="margin-top:0.5rem;">No standing order, no subscription, no website to faff with. Just a text or a call each week to say you're in.</p>
+      <div class="notice">
+        <strong>Cash or bank transfer.</strong> We don't take cards — it's a farm, not a supermarket.
+      </div>
+    </div>
+
+    <div class="contact">
+      Call or text <strong>Jenny</strong> on <strong>01404 850XXX</strong>
+    </div>
+
+    <p class="footnote">Established 6 years. Smallholding, Honiton EX14.</p>
+  </div>
+</body>
+</html>
